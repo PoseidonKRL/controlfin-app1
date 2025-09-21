@@ -1,0 +1,20 @@
+{
+  "name": "controlfin",
+  "version": "1.0.0",
+  "description": "Um aplicativo de gerenciamento financeiro pessoal.",
+  "main": "index.tsx",
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --minify",
+    "postbuild": "cp index.html manifest.json sw.js dist/"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^3.2.1",
+    "@google/genai": "^1.20.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.3"
+  }
+}
